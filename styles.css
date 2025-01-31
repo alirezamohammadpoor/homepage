@@ -9,30 +9,31 @@ body {
 }
 
 a:visited {
-  color: #F1FAEE;
+  color: #1D3557;
 }
 
 a:link {
   text-decoration: none;
-  color: #F1FAEE;
+  color: #1D3557;
 }
 a:hover {
-  color: #F1FAEE;
+  color: #1D3557;
 }
 
 a:active {
-  color: #F1FAEE;
+  color: #1D3557;
 }
 
 
 .header {
   height: 8vh;
-  width: 100vw;
-  background-color: #1D3557;
+  width: 80vw;
+  background-color: white;
   display: flex;
   align-items: center;
-  justify-content: space-around;
-}
+  justify-content: space-between;
+  border-bottom: 0.15rem solid #1D3557;
+  }
 
 .header-home {
   font-weight: 500;
@@ -55,7 +56,9 @@ display: flex;
 justify-content: center;
 align-items: center;
 gap: 50px;
+position: relative;
 }
+
 
 .profile {
   background-image: url(./images/profile.JPeG);
@@ -74,12 +77,12 @@ gap: 50px;
   background-color: white;
   height: 30vh;
   width: 25vw;
-  transition: all 3s ease;
 }
 
 .about-h3 {
   font-weight: 500;
   line-height: 0px;
+
 }
 
 .name-h1 {
@@ -93,9 +96,19 @@ gap: 50px;
 .job {
   color: #457B9D;
   transition: color 3s ease, opacity 3s ease;
+  border-bottom: 0.15rem solid #457B9D;
 }
 .about-para {
   
+}
+
+.button-download-resume {
+  width: 9rem;
+  height: 2.5rem;
+  border-radius: 12px;
+  color: #F1FAEE;
+  background-color: #457B9D;
+  border: none;
 }
 
 .devicon-linkedin-plain, .devicon-github-original {
@@ -103,18 +116,97 @@ gap: 50px;
 }
 
 .iconify {
-  font-size: 2em;
+  font-size: 1.4rem;
 }
 .devicon-github-original-wordmark {
-  font-size: ;
+  font-size: 1.4rem;
+}
+
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(4, 200px);
+  grid-template-rows: repeat(4, 200px);
+  gap: 4rem;
+  margin-top: 2rem;
 }
 
 .work-h2 {
-  font-weight: 400;
-
+  font-weight: 500;
+  font-size: 2rem;
+  text-align: left;
 }
 
 .project-container {
+  background-color: white;
+  min-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-image-sneakercuisine video {
+  width: 400px;
+  box-shadow: -5px 5px 20px rgb(0 0 0 / 0.6);
+  transition: all 3s ease;
+  position: relative;
+  right: 15%; 
+}
+
+.project-image-rps {
+  background-image: url(./images/rps.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 0%;
+  min-height: 500px;
+  min-width: 500px;
+  overflow: hidden;
+  box-shadow: -5px 5px 20px rgb(0 0 0 / 0.6);
+  transition: all 3s ease;
+  position: relative;
+  right: 15%;
+}
+.project-name {
+
+}
+
+.about-para {
+  width: 30vw;
+}
+
+.about-project {
+  padding: 3rem;
+}
+
+.project-image-dashboard {
+  background-image: url(./images/dashboard.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 0%;
+  min-height: 500px;
+  min-width: 500px;
+  overflow: hidden;
+  box-shadow: -5px 5px 20px rgb(0 0 0 / 0.6);
+  transition: all 3s ease;
+  position: relative;
+
+}
+
+.project-container-dashboard {
+  flex-direction: row-reverse;
+  background-color: white;
+  min-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+/* .project-container {
   display: grid;
   grid-template-columns: 300px 300px 300px;
   grid-template-rows: 200px 150px 250px 150px;
@@ -140,42 +232,27 @@ gap: 50px;
 }
 
 .disc-para {
-  font-weight: 600;
-}
+  font-weight: 600; */
+
 
 .contact-container {
-  background-color: rgb(255, 255, 255);
-  width: 50vw;
-  height: 40vh;
+  background-color: white;
+  width: 100%;
+  height: 15vh;
   display: flex;
   margin-top: 20vh;
-  display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 1rem;
 }
 
-.contact-h3 {
-  color: black;
+.quote {
+  color: #1D3557;
+  font-weight: 500;
+  font-size: 2rem;
+  border-top: 0.15rem solid #1D3557;
 }
 
-.contact-para {
-  color: black;
-}
-
-.contact-image {
-  background-image: url(images/header-image.JPG);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  height: 35vh;
-  width: 15vw;
-  position: relative;
-  box-shadow: 0 3px 10px rgb(0 0 0 / 0.7);
-}
-
-.contact-form {
-  color: black;
-  cursor: pointer;
-
+.copyright {
+  font-weight: 500;
 }
