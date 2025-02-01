@@ -5,39 +5,40 @@ body {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  color: #1D3557; 
+  color: #F1FAEE;
+  overflow-x: hidden;
+  background-color: #1D3557;
 }
 
 a:visited {
-  color: #1D3557;
+  color: #A8DADC;
 }
 
 a:link {
   text-decoration: none;
-  color: #1D3557;
+  color: #A8DADC;
 }
 a:hover {
-  color: #1D3557;
+  color: #A8DADC;
 }
 
 a:active {
-  color: #1D3557;
+  color: #A8DADC;
 }
 
 
 .header {
   height: 8vh;
-  width: 80vw;
-  background-color: white;
+  width: 90%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 0.15rem solid #1D3557;
+  border-bottom: 0.1rem solid #A8DADC;
   }
 
 .header-home {
   font-weight: 500;
-  font-size: 2rem;
+  font-size: 1rem;
   text-decoration: none;
 }
 
@@ -49,70 +50,85 @@ a:active {
 }
 
 .header-container {
-background-color: white;
-min-width: 80vw;
-min-height: 100vh;
+max-width: 90vw;
+max-height: 100vh;
 display: flex;
-justify-content: center;
-align-items: center;
-gap: 50px;
 position: relative;
+flex-direction: column;
 }
 
 
-.profile {
+/* .profile {
   background-image: url(./images/profile.JPeG);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  border-radius: 50%;
-  min-height: 400px;
-  min-width: 400px;
+  min-width: 90vw;
+  min-height: 40vh;
   overflow: hidden;
   box-shadow: -5px 5px 20px rgb(0 0 0 / 0.6);
   transition: all 3s ease;
-}
+  position: relative;
+} */
 
 .about-me {
-  background-color: white;
-  height: 30vh;
-  width: 25vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 90vw;
+  margin-top: 2vh;
+}
+
+p.about-para {
+  width: 90vw;
+  font-size: 1.4rem;
+  line-height: 1.4;
 }
 
 .about-h3 {
   font-weight: 500;
-  line-height: 0px;
-
+  line-height: 0;
+  font-size: 2rem;
 }
 
 .name-h1 {
-  
+  font-size: 1.8rem;
+  line-height: 0;
 }
 
 .title-h2 {
-  line-height: 0px;
+  line-height: 0;
 }
 
 .job {
-  color: #457B9D;
+  color: #A8DADC;
   transition: color 3s ease, opacity 3s ease;
-  border-bottom: 0.15rem solid #457B9D;
+  border-bottom: 0.15rem solid #A8DADC;
 }
-.about-para {
-  
+
+.button-container {
+  display: flex;
+  gap: 1rem;
+  margin-top: 10vh;
+  margin-bottom: 5vh;
 }
 
 .button-download-resume {
-  width: 9rem;
+  width: 7rem;
   height: 2.5rem;
   border-radius: 12px;
   color: #F1FAEE;
-  background-color: #457B9D;
-  border: none;
+  background-color: #1D3557;
+  border: solid 2px;
+  font-size: 1.1rem;
+}
+
+.button-download-resume:visited {
+  color: #A8DADC;
 }
 
 .devicon-linkedin-plain, .devicon-github-original {
-  font-size: 2em;
+  font-size: 2rem;
 }
 
 .iconify {
@@ -122,12 +138,16 @@ position: relative;
   font-size: 1.4rem;
 }
 
+.skills-h2 {
+  margin-top: 30px;
+  font-size: 2rem;
+}
+
 .skills-container {
   display: grid;
-  grid-template-columns: repeat(4, 200px);
-  grid-template-rows: repeat(4, 200px);
-  gap: 4rem;
+  grid-template-columns: repeat(1, 7rem);
   margin-top: 2rem;
+  height: 90vh;
 }
 
 .work-h2 {
@@ -136,123 +156,93 @@ position: relative;
   text-align: left;
 }
 
-.project-container {
-  background-color: white;
-  min-width: 100vw;
-  min-height: 100vh;
+.about-project {
+  max-width: 90vw;
+  max-height: 100vh;
+  margin-bottom: 4rem;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  position: relative;
+  flex-direction: column;
+  margin-bottom: 60vh;
 }
 
-.project-image-sneakercuisine video {
-  width: 400px;
-  box-shadow: -5px 5px 20px rgb(0 0 0 / 0.6);
-  transition: all 3s ease;
-  position: relative;
-  right: 15%; 
-}
-
-.project-image-rps {
-  background-image: url(./images/rps.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  border-radius: 0%;
-  min-height: 500px;
-  min-width: 500px;
-  overflow: hidden;
-  box-shadow: -5px 5px 20px rgb(0 0 0 / 0.6);
-  transition: all 3s ease;
-  position: relative;
-  right: 15%;
-}
 .project-name {
 
 }
 
-.about-para {
-  width: 30vw;
+.about-para-project {
+  font-size: 1rem;
+  line-height: 1.4;
 }
 
 .about-project {
-  padding: 3rem;
+  height: 10vh;
+}
+
+.project-title {
+
+}
+
+.project-h2 {
+
+}
+
+.project-image-sneakercuisine video {
+  width: 90vw;
+  margin-top: 20px;
+  box-shadow: -5px 5px 20px rgb(0 0 0 / 0.6);
+  transition: all 3s ease;
+}
+
+.rps-div {
+  width: 90vw;
+  margin-top: 10vh;
+}
+
+.rps-image {
+  width: 90vw;
+}
+
+.about-project-rps {
+  max-width: 90vw;
+  max-height: auto;
+  margin-top: 1rem;
+  margin-bottom: 4rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .project-image-dashboard {
-  background-image: url(./images/dashboard.webp);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  border-radius: 0%;
-  min-height: 500px;
-  min-width: 500px;
-  overflow: hidden;
-  box-shadow: -5px 5px 20px rgb(0 0 0 / 0.6);
-  transition: all 3s ease;
-  position: relative;
-
+  width: 90vw;
+  margin-top: 10vh;
 }
 
-.project-container-dashboard {
-  flex-direction: row-reverse;
-  background-color: white;
-  min-width: 100vw;
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.dashboard-image {
+  width: 90vw;
 }
-
-
-
-/* .project-container {
-  display: grid;
-  grid-template-columns: 300px 300px 300px;
-  grid-template-rows: 200px 150px 250px 150px;
-  column-gap: 30px;
-  row-gap: 20px;
-  
-}
-
-.project {
-  background-image: url(./images/test.jpeg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  box-shadow: 0 3px 10px rgb(0 0 0 / 0.7);
-}
-
-.project-disc {
-  background-color: #1D3557;
-  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
-  border: none;
-  padding-left: 10px;
-  color: #F1FAEE;
-}
-
-.disc-para {
-  font-weight: 600; */
-
 
 .contact-container {
-  background-color: white;
-  width: 100%;
-  height: 15vh;
+  background-color: #1D3557;
   display: flex;
-  margin-top: 20vh;
+  gap: 1rem;
+  margin-top: 60vh;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
 }
 
 .quote {
-  color: #1D3557;
+  color: white;
   font-weight: 500;
-  font-size: 2rem;
-  border-top: 0.15rem solid #1D3557;
+  font-size: 1rem;
+  border-top: 0.15rem solid white;
 }
 
 .copyright {
   font-weight: 500;
 }
+
+/* @media (min-width: 390px) {
+  .header, .navbar, .header-home, .header-container, .profile, .about-me, .about-para {
+    max-width: 390px;
+  }
+} */
