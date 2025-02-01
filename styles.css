@@ -38,7 +38,7 @@ a:active {
 
 .header-home {
   font-weight: 500;
-  font-size: 1rem;
+  font-size: 0.8rem;
   text-decoration: none;
 }
 
@@ -47,6 +47,7 @@ a:active {
   gap: 20px;
   align-items: center;
   font-weight: 500;
+  font-size: 0.8rem;
 }
 
 .header-container {
@@ -111,6 +112,8 @@ p.about-para {
   gap: 1rem;
   margin-top: 10vh;
   margin-bottom: 5vh;
+  text-align: center;
+  padding-top: 10px;
 }
 
 .button-download-resume {
@@ -222,12 +225,12 @@ p.about-para {
 }
 
 .contact-container {
-  background-color: #1D3557;
-  display: flex;
-  gap: 1rem;
-  margin-top: 60vh;
-  justify-content: center;
-  align-items: center;
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
 }
 
 .quote {
@@ -241,8 +244,21 @@ p.about-para {
   font-weight: 500;
 }
 
-/* @media (min-width: 390px) {
-  .header, .navbar, .header-home, .header-container, .profile, .about-me, .about-para {
-    max-width: 390px;
-  }
-} */
+
+/* CSS for blog.html */
+
+.date {
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.blog-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 90vw;
+}
+
+.blog-title {
+  font-size: 1.5rem;
+}
