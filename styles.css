@@ -11,19 +11,19 @@ body {
 }
 
 a:visited {
-  color: #A8DADC;
+  color: #F1FAEE;
 }
 
 a:link {
+  color: #F1FAEE;
   text-decoration: none;
-  color: #A8DADC;
 }
 a:hover {
-  color: #A8DADC;
+  color: #457B9D;
 }
 
 a:active {
-  color: #A8DADC;
+  color: #F1FAEE;
 }
 
 
@@ -33,7 +33,7 @@ a:active {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 0.1rem solid #A8DADC;
+  border-bottom: 0.1rem solid #F1FAEE;
   }
 
 .header-home {
@@ -110,9 +110,8 @@ p.about-para {
 .button-container {
   display: flex;
   gap: 1rem;
-  margin-top: 10vh;
-  margin-bottom: 5vh;
-  text-align: center;
+  margin-top: 3vh;
+  align-items: center;
   padding-top: 10px;
 }
 
@@ -120,14 +119,16 @@ p.about-para {
   width: 7rem;
   height: 2.5rem;
   border-radius: 12px;
+  border-color: #F1FAEE;
   color: #F1FAEE;
-  background-color: #1D3557;
   border: solid 2px;
   font-size: 1.1rem;
+  text-align: center;
+  line-height: 2.5rem;
 }
 
 .button-download-resume:visited {
-  color: #A8DADC;
+  color: #F1FAEE;
 }
 
 .devicon-linkedin-plain, .devicon-github-original {
@@ -142,35 +143,39 @@ p.about-para {
 }
 
 .skills-h2 {
-  margin-top: 30px;
   font-size: 2rem;
 }
 
 .skills-container {
   display: grid;
   grid-template-columns: repeat(1, 7rem);
-  margin-top: 2rem;
+  margin-top: 1rem;
   height: 90vh;
 }
 
 .work-h2 {
   font-weight: 500;
   font-size: 2rem;
-  text-align: left;
+  margin: 0;
 }
 
-.about-project {
+.project-container {
   max-width: 90vw;
   max-height: 100vh;
   margin-bottom: 4rem;
   display: flex;
   position: relative;
   flex-direction: column;
-  margin-bottom: 60vh;
 }
 
 .project-name {
+  line-height: 0;
+  font-size: 1rem;
+}
 
+.project-title {
+  line-height: 0;
+  font-size: 1.5rem;
 }
 
 .about-para-project {
@@ -178,16 +183,8 @@ p.about-para {
   line-height: 1.4;
 }
 
-.about-project {
-  height: 10vh;
-}
-
-.project-title {
-
-}
-
 .project-h2 {
-
+  line-height: 1;
 }
 
 .project-image-sneakercuisine video {
@@ -195,6 +192,7 @@ p.about-para {
   margin-top: 20px;
   box-shadow: -5px 5px 20px rgb(0 0 0 / 0.6);
   transition: all 3s ease;
+  margin-bottom: 2vh;
 }
 
 .rps-div {
@@ -206,20 +204,6 @@ p.about-para {
   width: 90vw;
 }
 
-.about-project-rps {
-  max-width: 90vw;
-  max-height: auto;
-  margin-top: 1rem;
-  margin-bottom: 4rem;
-  display: flex;
-  flex-direction: column;
-}
-
-.project-image-dashboard {
-  width: 90vw;
-  margin-top: 10vh;
-}
-
 .dashboard-image {
   width: 90vw;
 }
@@ -229,15 +213,32 @@ p.about-para {
   left: 0;
   bottom: 0;
   width: 100%;
-  color: white;
+  color: #F1FAEE;
   text-align: center;
+  border-top: 0.1rem solid #F1FAEE;
+  display: flex;
+  flex-direction: column;
+  font-size: 1rem;
+  height: 50px;
+  padding-top: 10px;
+  margin-bottom: 1rem;
 }
 
-.quote {
-  color: white;
-  font-weight: 500;
+.contact-container-fixed {
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: #F1FAEE;
+  text-align: center;
+  border-top: 0.1rem solid #F1FAEE;
+  display: flex;
+  flex-direction: column;
   font-size: 1rem;
-  border-top: 0.15rem solid white;
+  height: 50px;
+  padding-top: 10px;
+  margin-bottom: 1rem;
+  position: fixed;
 }
 
 .copyright {
@@ -260,5 +261,49 @@ p.about-para {
 }
 
 .blog-title {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
+}
+
+
+/* Sign up form CSS */
+
+.sign-up {
+  width: 90vw;
+  height: 30vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  margin-top: 5vh;
+  align-items: center;
+}
+
+.input {
+  height: 10vh;
+  font-size: 1rem;
+  color: #F1FAEE;
+}
+
+
+
+/* Media queries */
+
+/* xs */
+@media (min-width: 475px) {
+
+} 
+
+/* sm */
+@media (min-width: 640px) {}
+
+/* md */
+@media (min-width: 768px) {}
+
+/* lg */
+@media (min-width: 1024px) {}
+
+/* xl */
+@media (min-width: 1280px) {}
+
+/* 2xl */
+@media (min-width: 1536px) {
 }
