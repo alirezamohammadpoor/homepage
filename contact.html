@@ -13,43 +13,49 @@
   </style>
 </head>
 <body>
-  <header class="header">
+  <header>
     <a href="index.html" class="header-home">Ali Reza Mohammad Poor</a>
-    <nav class="navbar">
-      <a href="index.html#projects">Projects</a>
+    <div class="off-screen-menu">
+      <a href="index.html">Home</a>
       <a href="blog.html">Blog</a>
       <a href="contact.html">Contact</a>
-    </nav>
-  </header>
-  <div class="main">
-    <div class="sign-up">
-      <div class="input">
-        <label for="first_name">First Name:</label>
-        <input type="text" name="first_name" id="first_name">
-      </div>
-      <div class="input">
-        <label for="last_name">Last Name:</label>
-        <input type="text" name="last_name" id="last_name">
-      </div>
-      <div class="input">
-        <label for="email">Email</label>
-        <input type="text" name="email" id="user_email">
-      </div>
-      <div class="input">
-        <label for="phone_number">Phone number</label>
-        <input type="text" name="phone_number" id="phone_number">
-      </div>
     </div>
-  </div>
-  <div class="button-container">
-    <a href="./pdf/resume.pdf" target="_blank" class="button-download-resume">Contact me</a>
-  </div>
+      <nav>
+        <div class="ham-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+      </div>
+      </nav>
+    </header>
+    <div class="container">
+      <form>
+        <div class="input-group">
+          <label for="name">Name</label>
+          <input id="name" class="invalid" placeholder="Enter your name" type="text" required>
+        </div>
+        <div class="input-group">
+          <label>Phone</label>
+          <input type="tel" placeholder="+46 123 123 10">
+        </div>
+        <div class="input-group">
+          <label>Email</label>
+          <input type="email" placeholder="Enter Email">
+        </div>
+
+        <div class="successful-submit">Thank you! I'll be in touch within 48 hours.</div>
+      <button type="submit">Submit</button>
+     
+    </form>
   <footer>
     <div class="contact-container-fixed">
+      <a href="index.html">Home</a>
+      <a href="blog.html">Blog</a>
       <a href="contact.html">Contact</a>
       <p class="copyright">© 2025 Ali Reza Mohammad Poor. All rights reserved.</p>
     </div>
   </footer>
+  <script src="script.js"></script>
 </body>
 
 </html>
